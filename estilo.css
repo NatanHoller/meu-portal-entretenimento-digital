@@ -1,0 +1,157 @@
+/* =========================
+   ESTILO GERAL
+========================= */
+
+body{
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(to right, #141e30, #243b55);
+
+    color: white;
+}
+
+/* =========================
+   TÍTULO PRINCIPAL
+========================= */
+
+#titulo-principal{
+    font-size: 40px;
+
+    padding: 25px;
+
+    color:azure;
+
+    text-shadow: 2px 2px 8px black;
+}
+
+/* =========================
+   FLEXBOX
+========================= */
+
+.container{
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 25px;
+
+    padding: 30px;
+
+    flex-wrap: wrap;
+}
+
+/* =========================
+   CARDS DAS SEÇÕES
+========================= */
+
+.secao{
+
+    background-color: rgba(255,255,255,0.08);
+
+    width: 320px;
+
+    padding: 20px;
+
+    border-radius: 18px;
+
+    backdrop-filter: blur(8px);
+
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.4);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+
+.secao:hover{
+
+    transform: translateY(-10px);
+
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.5);
+}
+
+/* =========================
+   TÍTULOS DAS SEÇÕES
+========================= */
+
+.titulo-secao{
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+
+    text-align: center;
+}
+
+/* =========================
+   IMAGENS
+========================= */
+
+.imagem{
+
+    width: 100%;
+
+    height: 190px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    margin-bottom: 12px;
+
+    transition: transform 0.3s;
+}
+
+/* Zoom leve na imagem */
+
+.imagem:hover{
+
+    transform: scale(1.03);
+}
+
+/* =========================
+   PARÁGRAFOS
+========================= */
+
+p{
+
+    line-height: 1.6;
+
+    text-align: justify;
+}
+
+/* =========================
+   CORES PERSONALIZADAS
+========================= */
+
+#filmes{
+
+    border-top: 6px solid #ff4d6d;
+}
+
+#musica{
+
+    border-top: 6px solid #00c896;
+}
+
+#games{
+
+    border-top: 6px solid #4dabff;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media(max-width: 900px){
+
+    .container{
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+}
